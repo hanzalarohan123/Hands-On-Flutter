@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/cupertino.dart' as prefix1;
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as prefix0;
+import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart' as prefix2;
 
 void main() => runApp(MaterialApp(
@@ -17,17 +18,27 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.black,
       ),
-      body: Center(
-        child:IconButton(onPressed: (){print('hahaha');},icon: Icon(Icons.arrow_drop_up),iconSize: 200,color: Colors.yellow,)
+      body:Container(
+        padding:EdgeInsetsDirectional.only(start:167.0,top:40.0,end:168.0,bottom:40.0),
+        color: Colors.red,margin: EdgeInsets.all(20.0),
+        child: Text('This is Hanzalah',textScaleFactor: 1.5,)
+
+
+
+      ),
+      //Center(
+
+//        child:IconButton(onPressed: (){print('hahaha');},icon: Icon(Icons.arrow_drop_up),iconSize: 200,color: Colors.yellow,)
 //        child:RaisedButton.icon(onPressed: (){}, icon: Icon(Icons.mail), label: Text('Mail me'),color: Colors.blueAccent,)
 //        child: RaisedButton(onPressed:(){print('you clicked me');},child: Text('click me here',),color: Colors.blue,)
 
 //        Icon(Icons.airport_shuttle,color: Colors.blue,size: 150,),
 //        child:prefix0.Image.asset('assets/xxx.jpg'), for image used if any
-      ),
-      backgroundColor: Colors.white,
+     // ),
+      //backgroundColor: Colors.white,
 
       floatingActionButton: FloatingActionButton(
+
         child: Center(
           child: Text('  CLick\nMe here'),
         ),onPressed:(){print('you clicked me');},backgroundColor: Colors.blueGrey,
